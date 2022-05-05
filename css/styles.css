@@ -8,6 +8,7 @@
     --team-bg-color: #F5F4FA;
     --logo-primery-color: #000000;
     --footer-link-color: rgba(255, 255, 255, 0.6);
+    --border-color: #ECECEC;
 }
 
 body {
@@ -26,13 +27,24 @@ body {
     margin: 0;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-contaiter {
     display: flex;
     align-items: center;
 }
 
 /* Styles for logo */
 .logo{
+    margin-right: 93px;
+
     color: var(--logo-primery-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
@@ -42,14 +54,8 @@ body {
     letter-spacing: 0.03em;
 }  
 
-.nav {
-    display: flex;
-    align-items: center;
-}
-
 .site-nav {
     display: flex;
-    margin-left: 93px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -168,10 +174,6 @@ body {
 }
 
 /* Styles for titles in features */
-.features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .features-list {
     display: flex;
@@ -203,7 +205,7 @@ body {
 }
 
 .works {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .work-list {
@@ -228,8 +230,6 @@ body {
 
 /* class for section team */
 .team {
-    padding: 94px 0;
-
     background-color: var(--team-bg-color);
 }
 
