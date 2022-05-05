@@ -117,7 +117,6 @@ body {
 
 .img {
     display: block;
-    margin: 0;
 }
 
 /* class for section-titles */
@@ -214,7 +213,7 @@ body {
     display: flex;
 }
 
-.work-list .work-item:not(:last-child) {
+.work-item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -403,7 +402,7 @@ body {
     padding-right: 15px;
 }
 
-.filter-card .portfolio-item {
+.portfolio-item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
