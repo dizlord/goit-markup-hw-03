@@ -21,6 +21,13 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Normalaize img */
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
 /* class to cancel styles in ul */
 .list {
     list-style: none;
@@ -28,15 +35,27 @@ body {
     margin: 0;
 }
 
+/* styles for positions */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* style for padding on all the sections */
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+/* Border for header */
 .header {
     border-bottom: 1px solid var(--border-header-color);
 }
 
+/* Container to flex header */
 .header-contaiter {
     display: flex;
     align-items: center;
@@ -55,15 +74,17 @@ body {
     letter-spacing: 0.03em;
 }  
 
+/* Styles to flex nav and contacts */
 .site-nav {
     display: flex;
 }
 
+/* Margin for nav */
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
 
-/* main styles for links */
+/* main styles for links in nav*/
 .nav-link {
     display: block;
     padding-top: 32px;
@@ -76,6 +97,7 @@ body {
     letter-spacing: 0.02em;
 }
 
+/* Add special color to current link */
 .accent {
     color: var(--accent-color);
 }
@@ -97,11 +119,13 @@ body {
     color: var(--accent-color);
 }
 
+/* flex the contacts */
 .contacts {
     display: flex;
     margin-left: auto;
 }
 
+/* add margin to the contacts exept the first */
 .contacts .item + .item {
     margin-left: 50px;
 }
@@ -113,10 +137,6 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.img {
-    display: block;
 }
 
 /* class for section-titles */
@@ -137,6 +157,8 @@ body {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--primary-bg-color);
     font-weight: 900;
@@ -145,13 +167,10 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    max-width: 696px;
 }
 
-.secondary-button {
-    background-color: var(--team-bg-color);
-    color: var(--title-text-color);
-}
-
+/* Hero btn */
 .hero-button {
     border-radius: 4px;
     border-style: none;
@@ -168,17 +187,18 @@ body {
     cursor: pointer;
 }
 
+/* Effects hover and focus for hero btn */
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--accent-hero-color);
 }
 
-/* Styles for titles in features */
-
+/* Flex the features */
 .features-list {
     display: flex;
 }
 
+/* Styles for titles in features */
 .features-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -190,32 +210,39 @@ body {
     text-transform: uppercase;
 }
 
+/* Put features in a net */
 .features-item {
     width: calc((100%-90px)/4);
     margin-right: 30px;
 }
 
+/* Clear the last fetures */
 .features-item:last-child {
     margin-right: 0;
 }
 
+/* Clear to paragraph in features */
 .features-paragraph {
     margin-top: 0;
     margin-bottom: 0;
 }
 
+/* Clear the padding for works from sectioction */
 .works {
     padding-top: 0;
 }
 
+/* Flex the img in works */
 .work-list {
     display: flex;
 }
 
+/* margins for works */
 .work-item:not(:last-child) {
     margin-right: 30px;
 }
 
+/* Work title */
 .works-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -233,10 +260,12 @@ body {
     background-color: var(--team-bg-color);
 }
 
+/* Flex the team content */
 .team-list {
     display: flex;
 }
 
+/* Header in team*/
 .team-names {
     margin-top: 0;
     margin-bottom: 10px;
@@ -249,15 +278,18 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Team item */
 .team-item {
     background-color: var(--primary-bg-color);
     border-radius: 0 0 4px 4px;
 }
 
+/* Cleat the last team card */
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
 
+/* Team paragraph */
 .team-paragraph {
     margin: 0;
 
@@ -267,6 +299,7 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Padding for team card */
 .team-container {
     padding: 30px 0;
 }
@@ -282,7 +315,6 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 
 /* style to footer */
 .footer {
@@ -323,25 +355,31 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* margin for footer */
 .footer-item {
     margin-bottom: 9px;
 }
 
+/* clear the last position in footer */
 .footer-item:last-child {
     margin-bottom: 0;
 }
 
 /* Portfolio */
+
+/* List of btn */
 .filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50 px;
 }
 
+/* Margin for filter's btn */
 .filter-item:not(:last-child) {
     margin-right: 8px;
 }
 
+/* Portfolio filter's btn */
 .filter-button {
     padding: 6px 22px;
     text-align: center;
@@ -365,6 +403,13 @@ body {
     color: var(--primary-bg-color);
 }
 
+/* put card in net */
+.filter-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* link for card */
 .portfolio-link {
     text-decoration: none;
 }
@@ -392,34 +437,24 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* styles for positions */
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
+/* Item in portfolio cards */
 .portfolio-item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
+/* Clear the last in row */
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
 }
 
+/* Clear for last 3 cards */
 .portfolio-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
 
-.filter-card {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* borders and style for cards */
 .card-container {
     padding: 20px 24px;
     border-right: 1px solid var(--border-card-color);
